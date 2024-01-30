@@ -1,0 +1,20 @@
+<?php echo ("Hello") ?>
+<div data-bind="scope: 'ui-component'">
+    <div data-bind="text: message"></div>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "ui-component": {
+                            "component": "Epam_Fundamentals/js/module"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+
+
